@@ -14,8 +14,15 @@ margin:20px auto;
 padding:15px;
 
 
-
 }
+.menu2{
+    position: absolute;
+    /* min-height: 50px; */
+    /* margin-bottom: 20px; */
+    border: 1px solid transparent;
+    z-index: 1;
+    left: 25%;
+  }
 /* main menu styles */
 .menuholder {
 float:left;
