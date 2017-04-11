@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/slider.css">
      <meta name="description" content="Moda Ecologica">
         <!--<meta name="viewport" content="width=device-width">-->
 
@@ -26,9 +28,9 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid menu">
+        <div class="container-fluid">
             <div class="row">
-                <nav class="navbar navbar-default">
+                <nav class="navbar menu2 navbar-default">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -38,17 +40,18 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo-mc site2.png" alt=""></a>
+                            <a class="navbar-brand" href="index.html"><img class="logo hidden-sm hidden-md hidden-lg" src="img/logo-mc site2.png" alt=""></a>
                         </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a href="modacruda.html">ModaCruda</a></li>
-                                <li><a href="3r.html">Las 3 "R"</a></li>
-                                <li><a href="tiendaTaller.html">Tienda / Taller</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contacto.html">Contactanos!</a></li>
+                        <div class="collapse navbar-collapse menuholder" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav menu slide">
+                                <li><a class="calipso" href="modacruda.html">ModaCruda</a></li>
+                                <li><a class="pink" href="3r.html">3R</a></li>
+                                <li><a class="fucsia" href="blog.html">Blog</a></li>
+                                <li><a class="purple" href="tiendaTaller.html">Tienda/Taller</a></li>
+                                <li><a class="caca" href="galeria.html">Galería</a></li>
+                                <li><a class="vino-tinto" href="contacto.html">Contactanos!</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
@@ -56,36 +59,116 @@
             </div>
         </div>
     </header>
-    <!-- F O N D O   P A R A L L A X   1  B A N N E R  P R I N C I P A L  -->
+    <!-- F O N D O   P A R A L L A X   1  s  l i d e r   -->
     <section class="fondo fondo-fixed fondo-1 modulo-alto">
         <div class="container-fluid layer home3r">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12"></div>
-                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 oscuro center">
-                        <a class="title-banner recicla" href="3r.html">
-                            <h1>R E C I C L A</h1> 
-                        </a>
-                    </div>
-                </div>
+                    <article id="slider">     
+                        <!-- Slider Setup -->
+                        <input checked type=radio name=slider id="slide1" />
+                        <input type=radio name=slider id="slide2" />
+                        <input type=radio name=slider id="slide3" />
+                        <input type=radio name=slider id="slide4" />
+                        <input type=radio name=slider id="slide5" />
+                        <!-- The Slider -->
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="slides">
+                            <div id="overflow">           
+                                <div class=inner>               
+                                <!--Trabajo 1-->
+                                    <article>
+                                        <a href="">
+                                            <img  target="_blank" src="img/christian-gertenbach-179213.jpg"/>
+                                        </a>
+                                    </article>
+                                <!--Trabajo 2-->
+                                    <article>
+                                        <a href="">
+                                            <img  target="_blank" src="img/tiko-giorgadze-149019.jpg"/>
+                                        </a>
+                                    </article>
+                                <!--Trabajo 1-->
+                                    <article>
+                                        <a href="">
+                                            <img  target="_blank" src="img/christian-gertenbach-179213.jpg"/>
+                                        </a>
+                                    </article>
+                                <!--Trabajo 2-->
+                                    <article>
+                                        <a href="">
+                                            <img  target="_blank" src="img/tiko-giorgadze-149019.jpg"/>
+                                        </a>
+                                    </article>
+                                </div> <!-- .inner -->
+                            </div> <!-- #overflow -->
+                        </div> <!-- #slides -->
+                        <!-- Controls and Active Slide Display -->
+                        <div class="col-md-1 col-sm-1 col-xs-1" id="controls">
+                            <label for=slide1></label>
+                            <label for=slide2></label>
+                            <label for=slide3></label>
+                            <label for=slide4></label>
+                            <label for=slide5></label>
+                        </div> <!-- #controls -->
+                        <div class="col-md-1 col-sm-1 col-xs-1" id="active">
+                            <label for=slide1></label>
+                            <label for=slide2></label>
+                            <label for=slide3></label>
+                            <label for=slide4></label>
+                            <label for=slide5></label>
+                        </div> <!-- #active -->
+                    </article> <!-- #slider -->
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- F O N D O   S O L I D O   2  R E U T I L I Z A -->
+    <section class="fondo-3 fondo modulo-alto">
+        <div class="container-fluid layer">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 claro center">
-                        <a class="title-banner redisena" href="3r.html">
-                            <h1>R E D I S E Ñ A</h1> 
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-sm-6 hidden-xs center"><img class="allcolors" src="img/simbolo-de-reciclaje_318-33231 copy.png" alt=""></div>
-                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 medio center">
-                        <a class="title-banner regala" href="3r.html">
-                            <h1>R E G A L A</h1> 
-                        </a>
+                    <!-- F O N D O   I M G -->
+                    <div class="col-md-4"><img class="img-3r" src="img/wvfjzf2qnfk-igor-ovsyannykov.jpg" alt=""></div>
+                    <!-- F O N D O   T E X T O -->
+                    <div class="col-md-4"><div class="text-1 text-home">
+                        <h1 class="title-text-home">Lorem Ipsum</h1>
+                        <p>
+                            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+                        </p>
+                    </div></div>
+                    <!-- F O N D O   V I D E O -->
+                    <div class="col-md-4">
+                        <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/w7sjhQzjlis" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- F O N D O   S O L I D O   2  T E X T O + F O T O S -->
-    <section class="fondo-3 fondo modulo-alto">
+    <!-- F O N D O   P A R A L L A X   R E C  I C L A -->
+    <section class="fondo fondo-fixed fondo-2 modulo-alto">
+        <div class="container-fluid layer">
+            <div class="container">
+                <div class="row">
+                    <!-- F O N D O   I M G -->
+                    <div class="col-md-4">
+                        <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/w7sjhQzjlis" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <!-- F O N D O   T E X T O -->
+                    <div class="col-md-4"><div class="text-1 text-home">
+                        <h1 class="title-text-home">Lorem Ipsum</h1>
+                        <p>
+                            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+                        </p>
+                    </div></div>
+                    <!-- F O N D O   V I D E O -->
+                    <div class="col-md-4"><img class="img-3r" src="img/wvfjzf2qnfk-igor-ovsyannykov.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- F O N D O   S O L I D O   R E G A L A -->
+    <section class="fondo-1 fondo modulo-alto">
         <div class="container-fluid layer">
             <div class="container">
                 <div class="row">
@@ -97,56 +180,7 @@
 
                         </p>
                     </div>
-                    <div class="col-md-6"><img class="img-home" src="img/wvfjzf2qnfk-igor-ovsyannykov.jpg" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- F O N D O   P A R A L L A X   3  F O T O S -->
-    <section class="fondo fondo-fixed fondo-2 modulo-alto">
-        <div class="container-fluid layer">
-            <div class="container">
-                <div class="row">
-                    <div class="grises col-xs-3 col-sm-3 col-lg-3 col-md-3 div-img"> 
-                        <a class0"hover-foto" href="blog.html">
-                            <img class=" img foto-color" src="img/kris-atomic-73935.jpg" />
-                            <div class="text"> blah !!! </div>
-                        </a>
-                    </div>
-                    <div class="grises col-xs-3 col-sm-3 col-lg-3 col-md-3"> 
-                        <a class0"hover-foto" href="blog.html">
-                            <img class="foto-color" src="img/kris-atomic-73935.jpg" />
-                        </a>
-                    </div>
-                    <div class="grises col-xs-3 col-sm-3 col-lg-3 col-md-3"> 
-                        <a class0"hover-foto" href="blog.html">
-                            <img class="foto-color" src="img/kris-atomic-73935.jpg" />
-                        </a>
-                    </div>
-                    <div class="grises col-xs-3 col-sm-3 col-lg-3 col-md-3"> 
-                        <a class0"hover-foto" href="blog.html">
-                            <img class="foto-color" src="img/kris-atomic-73935.jpg" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- F O N D O   S O L I D O   4  F O T O  + T E X T O S -->
-    <!-- F O N D O   S O L I D O   2  T E X T O + F O T O S -->
-    <section class="fondo-1 fondo modulo-alto">
-        <div class="container-fluid layer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6"><img class="img-home" src="img/wvfjzf2qnfk-igor-ovsyannykov.jpg" alt=""></div>
-                                        <div class="col-md-6 text-1 text-home">
-                        <h1 class="title-text-home">Lorem Ipsum</h1>
-                        <p>
-                            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
-
-
-                        </p>
-                    </div>
+                     <div class="col-md-6"><iframe class="fb" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FArroparteModaEcologiK%2Fposts%2F668034263367744&width=500" width="100%" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
                 </div>
             </div>
         </div>
@@ -165,9 +199,12 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/jquery.ascensor.js"></script>
-    <script>
-        $('#ascensor').ascensor();
-    </script>
+<script>
+    $(document).ready(function() {
+  $("aboutme").click(function() {
+    $("html, body").animate({scrollTop: $("#aboutme").offset().top}, 2000);});
+});
+</script>
     <script type="text/javascript"></script>
 </body>
 </html>
