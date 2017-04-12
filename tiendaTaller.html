@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
      <meta name="description" content="Moda Ecologica">
         <!--<meta name="viewport" content="width=device-width">-->
 
@@ -64,60 +65,12 @@
         <div class="container-fluid layer home3r">
             <div class="container">
                 <div class="row">
-                    <article id="slider">     
-                        <!-- Slider Setup -->
-                        <input checked type=radio name=slider id="slide1" />
-                        <input type=radio name=slider id="slide2" />
-                        <input type=radio name=slider id="slide3" />
-                        <input type=radio name=slider id="slide4" />
-                        <input type=radio name=slider id="slide5" />
-                        <!-- The Slider -->
-                        <div class="col-md-12 col-sm-12 col-xs-12" id="slides">
-                            <div id="overflow">           
-                                <div class=inner>               
-                                <!--Trabajo 1-->
-                                    <article>
-                                        <a href="">
-                                            <img  target="_blank" src="img/christian-gertenbach-179213.jpg"/>
-                                        </a>
-                                    </article>
-                                <!--Trabajo 2-->
-                                    <article>
-                                        <a href="">
-                                            <img  target="_blank" src="img/tiko-giorgadze-149019.jpg"/>
-                                        </a>
-                                    </article>
-                                <!--Trabajo 1-->
-                                    <article>
-                                        <a href="">
-                                            <img  target="_blank" src="img/christian-gertenbach-179213.jpg"/>
-                                        </a>
-                                    </article>
-                                <!--Trabajo 2-->
-                                    <article>
-                                        <a href="">
-                                            <img  target="_blank" src="img/tiko-giorgadze-149019.jpg"/>
-                                        </a>
-                                    </article>
-                                </div> <!-- .inner -->
-                            </div> <!-- #overflow -->
-                        </div> <!-- #slides -->
-                        <!-- Controls and Active Slide Display -->
-                        <div class="col-md-1 col-sm-1 col-xs-1" id="controls">
-                            <label for=slide1></label>
-                            <label for=slide2></label>
-                            <label for=slide3></label>
-                            <label for=slide4></label>
-                            <label for=slide5></label>
-                        </div> <!-- #controls -->
-                        <div class="col-md-1 col-sm-1 col-xs-1" id="active">
-                            <label for=slide1></label>
-                            <label for=slide2></label>
-                            <label for=slide3></label>
-                            <label for=slide4></label>
-                            <label for=slide5></label>
-                        </div> <!-- #active -->
-                    </article> <!-- #slider -->
+                    <a href="#"><img class="mySlides img-slider" src="img/tiko-giorgadze-149019.jpg"/></a>
+                    <a href="#"><img class="mySlides img-slider" src="img/christian-gertenbach-179213.jpg"/></a>
+                    <a href="#"><img class="mySlides img-slider" src="img/tiko-giorgadze-149019.jpg"/></a>
+                    <a href="#"><img class="mySlides img-slider" src="img/christian-gertenbach-179213.jpg"/></a>
+                    <button class="btn-slides w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="btn-slides w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
                 </div> 
             </div>
         </div>
@@ -162,20 +115,24 @@
     <!-- F O N D O   S O L I D O   4  F O T O  + T E X T O S -->
     <section class="fondo-1 fondo modulo-alto">
         <div class="container-fluid layer">
-            <div class="container">
+            <div class="container" style="position: relative;">
                 <div class="row">
                     <!-- F O N D O   I M G -->
-                    <div class="col-md-4"><img class="img-3r" src="img/wvfjzf2qnfk-igor-ovsyannykov.jpg" alt=""></div>
+                    <div class="col-md-4 left">
+                        <img class="img-tt pull-left" src="img/wvfjzf2qnfk-igor-ovsyannykov.jpg" alt="">
+                    </div>
                     <!-- F O N D O   T E X T O -->
-                    <div class="col-md-4"><div class="text-1 text-home">
-                        <h1 class="title-text-home">Lorem Ipsum</h1>
-                        <p>
-                            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
-                        </p>
-                    </div></div>
+                    <div class="col-md-4 center">
+                        <div class="text-tt">
+                            <h1 class="title-text-home">Lorem Ipsum</h1>
+                            <p>
+                                Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+                            </p>
+                        </div>
+                    </div>
                     <!-- F O N D O   V I D E O -->
-                    <div class="col-md-4">
-                        <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/w7sjhQzjlis" frameborder="0" allowfullscreen></iframe>
+                    <div class="col-md-4 right">
+                        <iframe class="video pull-right" width="100%" height="100%" src="https://www.youtube.com/embed/w7sjhQzjlis" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -201,6 +158,24 @@
     $("html, body").animate({scrollTop: $("#aboutme").offset().top}, 2000);});
 });
 </script>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+    </script>
 </body>
 </html>
