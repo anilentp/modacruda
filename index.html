@@ -99,23 +99,23 @@
             <div class="container">
                 <div class="row">
                     <div class="grises col-xs-3 col-sm-3 col-lg-3 col-md-3 div-img"> 
-                        <a class0"hover-foto" href="blog.html">
+                        <a class="hover-foto" href="blog.html">
                             <img class=" img foto-color" src="img/kris-atomic-73935.jpg" />
                             <div class="text"> blah !!! </div>
                         </a>
                     </div>
                     <div class="grises col-xs-3 col-sm-3 col-lg-3 col-md-3"> 
-                        <a class0"hover-foto" href="blog.html">
+                        <a class="hover-foto" href="blog.html">
                             <img class="foto-color" src="img/kris-atomic-73935.jpg" />
                         </a>
                     </div>
                     <div class="grises col-xs-3 col-sm-3 col-lg-3 col-md-3"> 
-                        <a class0"hover-foto" href="blog.html">
+                        <a class="hover-foto" href="blog.html">
                             <img class="foto-color" src="img/kris-atomic-73935.jpg" />
                         </a>
                     </div>
                     <div class="grises col-xs-3 col-sm-3 col-lg-3 col-md-3"> 
-                        <a class0"hover-foto" href="blog.html">
+                        <a class="hover-foto" href="blog.html">
                             <img class="foto-color" src="img/kris-atomic-73935.jpg" />
                         </a>
                     </div>
@@ -162,6 +162,24 @@
     $("html, body").animate({scrollTop: $("#aboutme").offset().top}, 2000);});
 });
 </script>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+    </script>
 </body>
 </html>
