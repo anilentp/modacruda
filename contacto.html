@@ -57,8 +57,8 @@
         </div>
     </header>
     <!-- F O N D O   P A R A L L A X   1  B A N N E R  P R I N C I P A L  -->
-    <section class="fondo fondo-fixed fondo-1 modulo-alto">
-        <div class="container-fluid layer home3r">
+    <section class="fondo fondo-fixed modulo-alto">
+        <div class="container-fluid home3r">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12"></div>
@@ -85,8 +85,8 @@
         </div>
     </section>
     <!-- F O N D O   S O L I D O   2  C O N T A C T O + M A P A  -->
-    <section class="fondo-3 fondo modulo-alto">
-        <div class="container-fluid layer">
+    <section class="fondo modulo-alto">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-1 text-home">
@@ -100,7 +100,10 @@
                                 <label for="exampleInputEmail2">Email</label>
                                 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
                             </div>
-                            <textarea class="form-control" rows="6"></textarea>
+                            <div class="form-group">
+                                <label for="exampleInputEmail2">Mensaje</label>
+                                <textarea class="form-control" rows="6"></textarea>
+                            </div>
                             <button type="submit" class="btn btn-default">Enviar</button>
                         </form>
                     </div>
@@ -112,8 +115,8 @@
         </div>
     </section>
     <!-- F O N D O   P A R A L L A X   3  F O T O S -->
-    <section class="fondo fondo-fixed fondo-2 modulo-alto">
-        <div class="container-fluid layer">
+    <section class="fondo fondo-fixed modulo-alto">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="grises col-xs-3 col-sm-3 col-lg-3 col-md-3 div-img"> 
@@ -142,9 +145,8 @@
         </div>
     </section>
     <!-- F O N D O   S O L I D O   4  F O T O  + T E X T O S -->
-    <!-- F O N D O   S O L I D O   2  T E X T O + F O T O S -->
-    <section class="fondo-1 fondo modulo-alto">
-        <div class="container-fluid layer">
+    <section class="fondo modulo-alto">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6"><img class="img-home" src="img/wvfjzf2qnfk-igor-ovsyannykov.jpg" alt=""></div>
@@ -162,7 +164,7 @@
     </section>
     <!-- F O N D O   P A R A L L A X   5 -->
     <footer class="fondo-fixed fondo-footer ">
-        <div class="container-fluid layer">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     
@@ -173,9 +175,12 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/jquery.ascensor.js"></script>
-    <script>
-        $('#ascensor').ascensor();
+ <script src="lib/smoothscrolling.jquery.js"></script>
+<script>
+      $("a.scroller").smoothscrolling(
+        { 
+        offsetTop: 65 // cantidad de pixeles que tiene el elemento flotante
+      });
     </script>
     <script type="text/javascript"></script>
 </body>

@@ -61,23 +61,22 @@
         </div>
     </header>
     <!-- F O N D O   P A R A L L A X   1  s  l i d e r   -->
-    <section class="fondo fondo-fixed fondo-1 modulo-alto">
-        <div class="container-fluid layer home3r">
+    <section class="fondo fondo-fixed modulo-alto">
+        <div class="container-fluid slider-foto home3r">
             <div class="container">
                 <div class="row">
-                    <a href="#"><img class="mySlides img-slider" src="img/tiko-giorgadze-149019.jpg"/></a>
-                    <a href="#"><img class="mySlides img-slider" src="img/christian-gertenbach-179213.jpg"/></a>
-                    <a href="#"><img class="mySlides img-slider" src="img/tiko-giorgadze-149019.jpg"/></a>
-                    <a href="#"><img class="mySlides img-slider" src="img/christian-gertenbach-179213.jpg"/></a>
+                    <a href="3r.html"><img class="mySlides img-slider" src="img/REDISEÑAR.jpg"/></a>
+                    <a href="#"><img class="mySlides img-slider" src="img/RECICLAR.jpg"/></a>
+                    <a href="#"><img class="mySlides img-slider" src="img/REGALAR.jpg"/></a>
                     <button class="btn-slides w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="btn-slides w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
                 </div> 
             </div>
         </div>
     </section>
-    <!-- F O N D O   S O L I D O   2  R E U T I L I Z A -->
-    <section class="fondo-3 fondo modulo-alto">
-        <div class="container-fluid layer">
+    <!-- F O N D O   S O L I D O   2  R E D I S E N A -->
+    <section id="redisena" class="fondo modulo-alto">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <!-- F O N D O   I M G -->
@@ -98,8 +97,8 @@
         </div>
     </section>
     <!-- F O N D O   P A R A L L A X   R E C  I C L A -->
-    <section class="fondo fondo-fixed fondo-2 modulo-alto">
-        <div class="container-fluid layer">
+    <section id="recicla" class="fondo fondo-fixed modulo-alto">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <!-- F O N D O   I M G -->
@@ -121,8 +120,8 @@
     </section>
 
     <!-- F O N D O   S O L I D O   R E G A L A -->
-    <section class="fondo-1 fondo modulo-alto">
-        <div class="container-fluid layer">
+    <section id="regala" class="fondo modulo-alto">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-1 text-home">
@@ -140,7 +139,7 @@
     </section>
     <!-- F O N D O   P A R A L L A X   5 -->
     <footer class="fondo-fixed fondo-footer ">
-        <div class="container-fluid layer">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     
@@ -176,6 +175,13 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block"; 
 }
+    </script>
+    <script src="lib/smoothscrolling.jquery.js"></script>
+<script>
+      $("a.scroller").smoothscrolling(
+        { 
+        offsetTop: 65 // cantidad de pixeles que tiene el elemento flotante
+      });
     </script>
 </body>
 </html>

@@ -61,8 +61,8 @@
         </div>
     </header>
     <!-- F O N D O   P A R A L L A X   1  B A N N E R  P R I N C I P A L  -->
-    <section class="fondo fondo-fixed fondo-1 modulo-alto">
-        <div class="container-fluid layer home3r">
+    <section class="fondo fondo-fixed modulo-alto">
+        <div class="container-fluid slider-foto home3r">
             <div class="container">
                 <div class="row">
                     <a href="#"><img class="mySlides img-slider" src="img/tiko-giorgadze-149019.jpg"/></a>
@@ -76,8 +76,8 @@
         </div>
     </section>
     <!-- F O N D O   S O L I D O   2  T E X T O + F O T O S -->
-    <section class="fondo-3 fondo modulo-alto">
-        <div class="container-fluid layer">
+    <section id="taller" class="fondo modulo-alto">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-1 text-home">
@@ -92,18 +92,18 @@
         </div>
     </section>
     <!-- F O N D O   P A R A L L A X   3  F O T O S -->
-    <section class="fondo fondo-fixed fondo-2 modulo-alto">
-        <div class="container-fluid layer">
+    <section id="ropa" class="fondo fondo-fixed modulo-alto">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="grises col-xs-6 col-sm-6 col-lg-6 col-md-3 div-img"> 
-                        <a class="hover-foto" href="blog.html">
+                        <a class="hover-foto" href="galeria_hombre.html">
                             <img class=" img foto-color" src="img/matthew-henry-7328.jpg" />
                             <div class="text"> H O M B R E </div>
                         </a>
                     </div>
                     <div class="grises col-xs-6 col-sm-6 col-lg-6 col-md-3 div-img"> 
-                        <a class="hover-foto" href="blog.html">
+                        <a class="hover-foto" href="galeria_mujer.html">
                             <img class=" img foto-color" src="img/juan-galafa-26475.jpg" />
                             <div class="text"> M U J E R  </div>
                         </a>
@@ -113,8 +113,8 @@
         </div>
     </section>
     <!-- F O N D O   S O L I D O   4  F O T O  + T E X T O S -->
-    <section class="fondo-1 fondo modulo-alto">
-        <div class="container-fluid layer">
+    <section class="fondo modulo-alto">
+        <div class="container-fluid">
             <div class="container" style="position: relative;">
                 <div class="row">
                     <!-- F O N D O   I M G -->
@@ -139,8 +139,8 @@
         </div>
     </section>
     <!-- F O N D O   P A R A L L A X   5 -->
-    <footer class="fondo-fixed fondo-footer ">
-        <div class="container-fluid layer">
+    <footer class="fondo-fixed fondo-footer">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     
@@ -176,6 +176,13 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block"; 
 }
+    </script>
+    <script src="lib/smoothscrolling.jquery.js"></script>
+<script>
+      $("a.scroller").smoothscrolling(
+        { 
+        offsetTop: 65 // cantidad de pixeles que tiene el elemento flotante
+      });
     </script>
 </body>
 </html>
